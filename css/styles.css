@@ -44,24 +44,47 @@ input {
 }
 
 .main-page {
-    max-width: 320px;
-    background-image: url(../images/coffe-hero-bgr1x.jpg);
+    width: 100%;
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), 
+    url(../images/coffe-hero-bgr1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 @media (min-resolution: 2x) {
     .main-page {
-        background-image: url(../images/coffe-hero-bgr2x.jpg);
-    }
+    background-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../images/coffe-hero-bgr1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
 }
 .hero-section {
-    width: 256px;
-    margin: 0 auto;
+    min-width: 320px;
+    height: auto;
+    padding: 108.5px 32px;
+}
+@media screen and (min-width:768px) {
+    .hero-section {
+        min-width: 768px;
+        padding-top: 311.5px;
+        padding-left: 32px;
+        padding-bottom: 311.5px;  
+}
+}
+@media screen and (min-width:1440px) {  
 }
 
 .hero-text {
     text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
 font-family: Aboreto;
     font-weight: 400;
     font-style: Regular;
@@ -70,8 +93,21 @@ font-family: Aboreto;
     letter-spacing: -1%;
     color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+    .hero-text-container {
+        width: 568px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+.hero-text {
+    height: auto;
+    font-size: 56px;
+}
+}
 .hero-paragraph {
     text-align: start;
+    margin-bottom: 32px;
     font-family: Quicksand;
         font-weight: 400;
         font-style: Regular;
@@ -79,4 +115,32 @@ font-family: Aboreto;
         line-height: 150%;
         letter-spacing: 0%;
         color: #ffffff;
+}
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:1440px) {
+
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6F4E37;
+
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #ffffff;   
+}
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:1440px) {
+
 }
