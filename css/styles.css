@@ -1,3 +1,7 @@
+.hide {
+    display: none;
+}
+
 body {
     font-family: "Roboto",
         sans-serif;
@@ -143,4 +147,50 @@ font-family: Aboreto;
 }
 @media screen and (min-width:1440px) {
 
+}
+
+
+
+.page-footer {
+    width: 320px;
+    background-color: #B58869;
+    padding: 24px 16px;
+}
+.footer-container {
+    width: 100%;
+    height: auto;
+    padding: 32px 46px;
+    background-color: #C29D84;
+    border-radius: 40px;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+}
+.footer-socials-container {
+    display: flex;
+    width: 196px;
+    margin-bottom: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.footer-logo {
+    margin-bottom: 40px;
+}
+.social-list {
+    gap: 12px;
+    
+}
+
+.social-item {
+    display: inline-block   ;
+}
+
+.nav-container {
+    width: 84px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-item {
+    gap: 32px;
 }
